@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n="extension_name">VOD Chat Sync — Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="layout">
+    <header class="page-header">
+      <h1 class="page-header__title" data-i18n="extension_name">VOD Chat Sync</h1>
+      <span class="page-header__sub" data-i18n="settings_title">設定</span>
+    </header>
+
+    <main class="content">
+      <!-- 01 表示 -->
+      <section class="card">
+        <header class="card__header">
+          <span class="card__index">01</span>
+          <h2 class="card__title" data-i18n="options_section_display">表示</h2>
+        </header>
+        <div class="card__body">
+          <div class="field">
+            <label class="field__label" for="chatOpacity" data-i18n="settings_chat_opacity">チャットの不透明度</label>
+            <div class="field__control">
+              <input type="range" id="chatOpacity" min="0.2" max="1" step="0.05">
+              <span class="field__value" id="chatOpacity-value">0.95</span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="chatWidth" data-i18n="settings_chat_width">チャットの幅</label>
+            <div class="field__control">
+              <input type="range" id="chatWidth" min="240" max="600" step="10">
+              <span class="field__value" id="chatWidth-value">320px</span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="emoteSize" data-i18n="settings_emote_size">エモートのサイズ</label>
+            <div class="field__control">
+              <select id="emoteSize" class="select">
+                <option value="1" data-i18n="settings_emote_size_small">小</option>
+                <option value="2" data-i18n="settings_emote_size_medium">中</option>
+                <option value="3" data-i18n="settings_emote_size_large">大</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label class="check">
+              <input type="checkbox" id="hideHeader">
+              <span data-i18n="settings_hide_header">チャットヘッダを隠す</span>
+            </label>
+          </div>
+          <div class="field">
+            <label class="check">
+              <input type="checkbox" id="hideStatusBar">
+              <span data-i18n="settings_hide_status_bar">ステータスバーを隠す</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 動作 (※ 自動起動チェックボックスは削除) -->
+      <section class="card">
+        <header class="card__header">
+          <span class="card__index">02</span>
+          <h2 class="card__title" data-i18n="options_section_behavior">動作</h2>
+        </header>
+        <div class="card__body">
+          <div class="field">
+            <label class="check">
+              <input type="checkbox" id="videoMirrorInPip">
+              <span data-i18n="settings_video_mirror">PiP に動画をミラーリングする</span>
+            </label>
+          </div>
+          <div class="field">
+            <label class="check">
+              <input type="checkbox" id="clickToSeek">
+              <span data-i18n="settings_click_to_seek">チャットクリックで動画をシーク</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- ※ 03 フィルタ セクションは削除 -->
+
+      <!-- 03 サポート (旧 04 を 03 にインデックス変更) -->
+      <section class="card">
+        <header class="card__header">
+          <span class="card__index">03</span>
+          <h2 class="card__title" data-i18n="options_section_support">サポート</h2>
+        </header>
+        <div class="card__body">
+          <button class="btn" id="diag-btn" data-i18n="settings_diagnostic">診断情報をコピー</button>
+          <span class="copied-msg" id="copied-msg" data-i18n="settings_diagnostic_copied" hidden>診断情報をクリップボードにコピーしました</span>
+          <button class="btn btn--ghost" id="reset-btn" data-i18n="settings_reset">初期値に戻す</button>
+        </div>
+      </section>
+    </main>
+
+    <a class="kofi-float" id="kofi-link" href="#" target="_blank" rel="noopener">
+      ☕ <span data-i18n="support_kofi">Buy me a coffee</span>
+    </a>
+  </div>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>

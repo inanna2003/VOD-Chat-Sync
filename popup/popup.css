@@ -1,0 +1,58 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { color-scheme: dark; }
+body {
+  width: 320px; background: #18181b; color: #efeff1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roobert", sans-serif;
+  font-size: 13px;
+}
+.hdr {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 14px; background: #1f1f23; border-bottom: 1px solid #3a3a3d;
+}
+.hdr__text { flex: 1 1 auto; }
+.hdr__text h1 { font-size: 14px; font-weight: 700; line-height: 1.2; }
+.hdr__sub    { font-size: 11px; color: #adadb8; }
+.switch { position: relative; width: 40px; height: 22px; cursor: pointer; flex-shrink: 0; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.switch__slider {
+  position: absolute; inset: 0; background: #3a3a3d; border-radius: 11px;
+  transition: background .15s ease;
+}
+.switch__slider::before {
+  content: ''; position: absolute; top: 2px; left: 2px; width: 18px; height: 18px;
+  background: #efeff1; border-radius: 50%; transition: transform .15s ease;
+}
+.switch input:checked + .switch__slider { background: #9147ff; }
+.switch input:checked + .switch__slider::before { transform: translateX(18px); }
+
+.card { padding: 12px 14px; }
+.card__row { margin-bottom: 12px; }
+.segmented {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  background: #1f1f23; border: 1px solid #3a3a3d; border-radius: 6px; overflow: hidden;
+}
+.seg {
+  appearance: none; background: transparent; border: 0; color: #adadb8;
+  padding: 9px 8px; font-size: 12px; cursor: pointer; transition: background .12s;
+}
+.seg:hover { background: rgba(255,255,255,.05); color: #efeff1; }
+.seg[aria-checked="true"] { background: #9147ff; color: #fff; font-weight: 600; }
+
+.primary {
+  display: block; width: 100%; padding: 10px;
+  background: #9147ff; border: 0; color: #fff; border-radius: 6px;
+  font-size: 13px; font-weight: 600; cursor: pointer; transition: background .12s;
+}
+.primary:hover { background: #772ce8; }
+.primary:disabled { background: #3a3a3d; color: #6a6a72; cursor: not-allowed; }
+
+.not-vod { margin-top: 8px; color: #adadb8; font-size: 11px; text-align: center; }
+
+.ftr {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 14px; background: #1f1f23; border-top: 1px solid #3a3a3d;
+}
+.link { background: transparent; border: 0; color: #9aa0a6; font-size: 12px; cursor: pointer; }
+.link:hover { color: #efeff1; }
+.kofi { color: #ff5e5b; font-size: 12px; text-decoration: none; font-weight: 600; }
+.kofi:hover { text-decoration: underline; }

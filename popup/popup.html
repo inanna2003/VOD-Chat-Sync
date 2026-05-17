@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n="extension_name">VOD Chat Sync</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="hdr">
+    <div class="hdr__icon">
+      <svg viewBox="0 0 20 20" fill="#9147ff" width="22" height="22"><path d="M2 2h16v12H9l-4 4v-4H2V2z"/></svg>
+    </div>
+    <div class="hdr__text">
+      <h1 data-i18n="extension_name">VOD Chat Sync</h1>
+      <span class="hdr__sub" id="status-label" data-i18n="popup_status_on">ON</span>
+    </div>
+    <label class="switch" title="" data-i18n-title="popup_master_toggle">
+      <input id="master-toggle" type="checkbox">
+      <span class="switch__slider"></span>
+    </label>
+  </header>
+
+  <section class="card">
+    <div class="card__row segmented" role="radiogroup" data-i18n-aria-label="popup_master_toggle">
+      <button class="seg" data-mode="pip-video" role="radio" aria-checked="false" data-i18n="popup_mode_pip_video">動画＋チャット</button>
+      <button class="seg" data-mode="pip-chat"  role="radio" aria-checked="false" data-i18n="popup_mode_pip_chat">チャットのみ</button>
+    </div>
+    <button class="primary" id="open-now-btn" data-i18n="popup_open_now">今すぐ PiP で開く</button>
+    <p class="not-vod" id="not-vod-msg" data-i18n="popup_not_vod" hidden>Twitch の VOD ページを開いてください。</p>
+  </section>
+
+  <footer class="ftr">
+    <button class="link" id="open-settings-btn" data-i18n="popup_settings">設定を開く</button>
+    <a class="kofi" id="kofi-link" href="#" target="_blank" rel="noopener">☕ Ko-fi</a>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

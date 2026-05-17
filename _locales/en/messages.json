@@ -1,0 +1,74 @@
+{
+  "extension_name": {
+    "message": "VOD Chat Sync",
+    "description": "Extension name. Do NOT include 'Twitch' to avoid trademark issues."
+  },
+  "extension_description": {
+    "message": "Show VOD-synced chat in an always-on-top picture-in-picture window. Supports BTTV/FFZ/7TV emotes and click-to-seek."
+  },
+
+  "popup_status_on":  { "message": "On"  },
+  "popup_status_off": { "message": "Off" },
+  "popup_master_toggle": { "message": "Enable extension" },
+  "popup_mode_pip_video":  { "message": "Video + Chat" },
+  "popup_mode_pip_chat":   { "message": "Chat only"    },
+  "popup_mode_inline":     { "message": "In-page"      },
+  "popup_open_now":  { "message": "Open PiP now" },
+  "popup_settings":  { "message": "Settings"     },
+  "popup_not_vod":   { "message": "Open a Twitch VOD page first." },
+  "popup_content_not_ready": { "message": "Please reload the Twitch page and try again."},
+
+  "options_section_display":  { "message": "Display"  },
+  "options_section_behavior": { "message": "Behavior" },
+  "options_section_filters":  { "message": "Filters"  },
+  "options_section_support":  { "message": "Support"  },
+
+  "settings_title": { "message": "Settings" },
+  "settings_chat_opacity": { "message": "Chat opacity" },
+  "settings_chat_width":   { "message": "Chat width"  },
+  "settings_emote_size":   { "message": "Emote size"  },
+  "settings_emote_size_small":  { "message": "Small"  },
+  "settings_emote_size_medium": { "message": "Medium" },
+  "settings_emote_size_large":  { "message": "Large"  },
+  "settings_hide_header":      { "message": "Hide chat header" },
+  "settings_hide_status_bar":  { "message": "Hide status bar"  },
+  "settings_hide_sub_notifications": { "message": "Hide subscription messages" },
+  "settings_video_mirror":     { "message": "Mirror video into PiP (captureStream)" },
+  "settings_click_to_seek":    { "message": "Click chat message to seek video" },
+  "settings_auto_start":       { "message": "Auto-start when entering a VOD" },
+  "settings_highlight_user":   { "message": "Highlight user (login name)" },
+  "settings_highlight_user_placeholder": { "message": "twitch login" },
+  "settings_muted_users":      { "message": "Muted users (one per line)" },
+  "settings_muted_words":      { "message": "Muted words (one per line)" },
+  "settings_diagnostic":       { "message": "Copy diagnostic info" },
+  "settings_diagnostic_copied":{ "message": "Diagnostic info copied to clipboard" },
+  "settings_reset":            { "message": "Reset to defaults" },
+  "settings_reset_confirm":    { "message": "Reset all settings to default values?" },
+  "settings_saved":            { "message": "Saved" },
+
+  "support_title":   { "message": "Like this extension?" },
+  "support_kofi":    { "message": "Buy me a coffee on Ko-fi" },
+  "support_review":  { "message": "Leave a review on the Chrome Web Store" },
+
+  "status_loading":               { "message": "Loading chat..."  },
+  "status_no_comments_here":      { "message": "No comments at this time."  },
+  "status_video_not_found":       { "message": "Video not found or unavailable."  },
+  "status_forbidden":             { "message": "This video is not accessible (private or subscriber-only)." },
+  "status_rate_limited":          { "message": "Twitch is rate-limiting — retrying..." },
+  "status_offline":               { "message": "Offline — waiting for connection..." },
+  "status_context_invalidated":   { "message": "Extension was updated. Please reload the page." },
+  "status_integrity": 		  { "message": "Twitch is rejecting requests (anti-bot challenge). Try reloading the page." },
+  "status_gesture_required":      { "message": "Cannot open PiP. Click anywhere on this page first, then try again."},
+
+  "fallback_no_document_pip":  { "message": "Picture-in-Picture is not supported in this browser. Falling back to in-page overlay." },
+  "fallback_no_capture_stream":{ "message": "Video mirroring is not supported. The chat will appear without the video." },
+  "fallback_play_failed":      { "message": "Could not resume playback. Please use the Twitch tab to play." },
+  "fallback_generic":          { "message": "Some features are unavailable in this browser." },
+  "fallback_play_failed":      { "message": "Could not resume playback. Please activate the Twitch tab to play."},
+
+  "chat_header_title":  { "message": "Chat Replay" },
+  "chat_btn_pause":     { "message": "Pause/Resume" },
+  "chat_btn_settings":  { "message": "Settings" },
+  "chat_btn_minimize":  { "message": "Minimize" },
+  "chat_btn_close":     { "message": "Close" }
+}

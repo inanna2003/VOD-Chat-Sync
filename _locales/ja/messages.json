@@ -1,0 +1,74 @@
+{
+  "extension_name": {
+    "message": "VOD チャット同期",
+    "description": "拡張機能名。商標摩擦を避けるため Twitch は含めない。"
+  },
+  "extension_description": {
+    "message": "VOD に同期したチャットを常時最前面の PiP ウィンドウに表示。BTTV/FFZ/7TV エモート対応、チャットクリックで動画シーク可。"
+  },
+
+  "popup_status_on":  { "message": "ON"  },
+  "popup_status_off": { "message": "OFF" },
+  "popup_master_toggle": { "message": "拡張機能を有効化" },
+  "popup_mode_pip_video":  { "message": "動画＋チャット" },
+  "popup_mode_pip_chat":   { "message": "チャットのみ"   },
+  "popup_mode_inline":     { "message": "ページ内表示"   },
+  "popup_open_now":  { "message": "今すぐ PiP で開く" },
+  "popup_settings":  { "message": "設定を開く"        },
+  "popup_not_vod":   { "message": "Twitch の VOD ページを開いてください。" },
+  "popup_content_not_ready": { "message": "Twitch ページをリロードしてからもう一度お試しください。"},
+
+  "options_section_display":  { "message": "表示"   },
+  "options_section_behavior": { "message": "動作"   },
+  "options_section_filters":  { "message": "フィルタ" },
+  "options_section_support":  { "message": "サポート" },
+
+  "settings_title": { "message": "設定" },
+  "settings_chat_opacity": { "message": "チャットの不透明度" },
+  "settings_chat_width":   { "message": "チャットの幅"     },
+  "settings_emote_size":   { "message": "エモートのサイズ" },
+  "settings_emote_size_small":  { "message": "小" },
+  "settings_emote_size_medium": { "message": "中" },
+  "settings_emote_size_large":  { "message": "大" },
+  "settings_hide_header":      { "message": "チャットヘッダを隠す" },
+  "settings_hide_status_bar":  { "message": "ステータスバーを隠す" },
+  "settings_hide_sub_notifications": { "message": "サブスクライブメッセージを隠す" },
+  "settings_video_mirror":     { "message": "PiP に動画をミラーリングする（captureStream）" },
+  "settings_click_to_seek":    { "message": "チャットクリックで動画をシーク" },
+  "settings_auto_start":       { "message": "VOD を開いたら自動で起動" },
+  "settings_highlight_user":   { "message": "ハイライトするユーザー（ログイン名）" },
+  "settings_highlight_user_placeholder": { "message": "Twitch ログイン名" },
+  "settings_muted_users":      { "message": "ミュートするユーザー（1行に1名）" },
+  "settings_muted_words":      { "message": "ミュートする単語（1行に1個）" },
+  "settings_diagnostic":       { "message": "診断情報をコピー" },
+  "settings_diagnostic_copied":{ "message": "診断情報をクリップボードにコピーしました" },
+  "settings_reset":            { "message": "初期値に戻す" },
+  "settings_reset_confirm":    { "message": "すべての設定を初期値に戻しますか？" },
+  "settings_saved":            { "message": "保存しました" },
+
+  "support_title":   { "message": "気に入っていただけましたか？" },
+  "support_kofi":    { "message": "Ko-fi で開発者をサポート" },
+  "support_review":  { "message": "Chrome Web Store でレビューを書く" },
+
+  "status_loading":               { "message": "チャットを読み込み中…" },
+  "status_no_comments_here":      { "message": "この位置にはチャットがありません" },
+  "status_video_not_found":       { "message": "動画が見つからないか利用できません" },
+  "status_forbidden":             { "message": "この動画にはアクセスできません（限定公開またはサブスク限定）" },
+  "status_rate_limited":          { "message": "Twitch の制限がかかっています — 再試行中…" },
+  "status_offline":               { "message": "オフラインです — 接続を待っています" },
+  "status_context_invalidated":   { "message": "拡張機能が更新されました。ページを再読み込みしてください。" },
+  "status_integrity": 		  { "message": "Twitch がリクエストを拒否しています（Bot 対策）。ページを再読込してください。" },
+  "status_gesture_required":      { "message": "PIP を開けません。このページを 1 回クリックしてから再度お試しください。"},
+
+  "fallback_no_document_pip":  { "message": "このブラウザは PiP に対応していません。ページ内オーバーレイにフォールバックします。" },
+  "fallback_no_capture_stream":{ "message": "動画ミラーリング非対応のため、チャットのみ表示します。" },
+  "fallback_play_failed":      { "message": "再生開始に失敗しました。Twitch タブで操作してください。" },
+  "fallback_generic":          { "message": "このブラウザでは一部機能が利用できません。" },
+  "fallback_play_failed":      { "message": "再生開始失敗。Twitch タブをアクティブにしてから再生してください"},
+
+  "chat_header_title":  { "message": "チャットリプレイ" },
+  "chat_btn_pause":     { "message": "一時停止／再開" },
+  "chat_btn_settings":  { "message": "設定" },
+  "chat_btn_minimize":  { "message": "最小化" },
+  "chat_btn_close":     { "message": "閉じる" }
+}

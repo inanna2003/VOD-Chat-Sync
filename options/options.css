@@ -1,0 +1,57 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { color-scheme: dark; --accent: #9147ff; --accent-hover: #772ce8; }
+html, body {
+  background: #0e0e10; color: #efeff1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roobert", sans-serif;
+  font-size: 14px; min-height: 100vh;
+}
+.layout { max-width: 720px; margin: 0 auto; padding: 24px 20px 80px; position: relative; }
+
+.page-header { margin-bottom: 24px; }
+.page-header__title { font-size: 22px; font-weight: 700; }
+.page-header__sub { color: #9aa0a6; font-size: 13px; }
+
+.card {
+  background: #18181b; border: 1px solid #2f2f33;
+  border-radius: 8px; margin-bottom: 16px; overflow: hidden;
+}
+.card__header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px; background: #1f1f23; border-bottom: 1px solid #2f2f33;
+}
+.card__index { color: #9aa0a6; font-variant-numeric: tabular-nums; font-size: 12px; }
+.card__title { font-size: 14px; font-weight: 700; }
+.card__body { padding: 16px; display: grid; gap: 14px; }
+
+.field { display: grid; gap: 6px; }
+.field__label { font-size: 12px; color: #adadb8; }
+.field__control { display: flex; align-items: center; gap: 10px; }
+.field__control input[type=range] { flex: 1 1 auto; }
+.field__value { min-width: 60px; text-align: right; color: #9aa0a6; font-variant-numeric: tabular-nums; font-size: 12px; }
+
+.check { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.check input[type=checkbox] { accent-color: var(--accent); width: 16px; height: 16px; }
+
+.select, .text, .textarea {
+  width: 100%; background: #0e0e10; color: #efeff1;
+  border: 1px solid #3a3a3d; border-radius: 4px; padding: 6px 8px;
+  font: inherit;
+}
+.textarea { font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: 12px; }
+
+.btn {
+  background: var(--accent); color: #fff; border: 0; padding: 8px 16px;
+  border-radius: 4px; font-weight: 600; cursor: pointer; transition: background .12s;
+}
+.btn:hover { background: var(--accent-hover); }
+.btn--ghost { background: transparent; border: 1px solid #3a3a3d; color: #adadb8; }
+.btn--ghost:hover { background: #2f2f33; color: #efeff1; }
+.copied-msg { color: #5cb85c; font-size: 12px; margin-left: 8px; }
+
+.kofi-float {
+  position: fixed; right: 24px; bottom: 24px;
+  background: #ff5e5b; color: #fff; padding: 10px 16px; border-radius: 24px;
+  text-decoration: none; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,.4);
+  transition: transform .15s ease;
+}
+.kofi-float:hover { transform: translateY(-2px); }
