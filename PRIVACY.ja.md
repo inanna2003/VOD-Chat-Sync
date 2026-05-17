@@ -1,6 +1,6 @@
 # プライバシーポリシー — VOD チャット同期
 
-_最終更新: 2025年_
+_最終更新: 2026年_
 
 本拡張機能はブラウザ内で完結するクライアントとして設計されており、個人情報の
 収集・送信・販売・共有・処理を一切行いません。
@@ -93,7 +93,4 @@ IndexedDB も使用せず、現在開いている Twitch タブの URL および
 ## 7. 連絡先
 
 本ポリシーに関するご質問は、GitHub リポジトリの Issue にて受け付けます。
-<https://github.com/YOUR_GITHUB_USER/vod-chat-sync/issues>
-
-（`YOUR_GITHUB_USER` の部分はリポジトリ作成後に実際の所有者名に置き換えて
-ください。）
+<https://github.com/inanna2003/vod-chat-sync/issues>
