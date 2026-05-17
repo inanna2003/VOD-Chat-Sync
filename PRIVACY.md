@@ -1,6 +1,6 @@
 # Privacy Policy — VOD Chat Sync
 
-_Last updated: 2025_
+_Last updated: 2026_
 
 This extension is designed to be a self-contained client that runs entirely in
 your browser. It does not collect, transmit, sell, share, or otherwise process
@@ -97,7 +97,4 @@ be noted in the extension's release notes / `CHANGELOG.md`.
 ## 7. Contact
 
 For questions about this policy, please open an issue on the GitHub
-repository: <https://github.com/YOUR_GITHUB_USER/vod-chat-sync/issues>
-
-(Replace `YOUR_GITHUB_USER` with the actual repository owner once the repository
-is created.)
+repository: <https://github.com/inanna2003/vod-chat-sync/issues>
