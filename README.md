@@ -33,7 +33,7 @@ chat while doing something else.
 
 ### From the Chrome Web Store
 
-*(Coming soon — link will be added once published.)*
+https://chromewebstore.google.com/detail/vod-チャット同期/hdhidghpjmpimapnagchaponanlmmfei
 
 ### Manual install (for development)
 
