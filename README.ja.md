@@ -35,7 +35,7 @@ Twitch の VOD 再生に同期したチャットリプレイを、常時最前�
 
 ### Chrome ウェブストア（公開後）
 
-*準備中 — 公開後にリンクを追加します。*
+https://chromewebstore.google.com/detail/vod-チャット同期/hdhidghpjmpimapnagchaponanlmmfei
 
 ### 手動インストール（開発用）
 
